@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkashPrajapati</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac8dc575c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header_text">
+            <p>Web<b>|</b>Android <span>==></span>Developer</p>
+            <h1>Hi, I'm <span>Akash</span><br> Prajapati from Mumbai</h1>
+        </div>
+    </div>
+   </div>
+   <!-- ----------------about----------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about_col_1">
+                <img src="image/user.png" alt="akash" srcset="">
+            </div>
+            <div class="about_col_2">
+                <h1 class="sub_title">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos odit accusantium delectus natus nobis inventore itaque fugiat accusamus, nemo sed velit sequi. Nemo voluptatibus itaque repudiandae ea voluptatem ratione? Dolore.
+                Deserunt laboriosam deleniti, dolorum fugit dolore sed in velit cumque consequatur vel perspiciatis voluptatibus distinctio. Non velit porro pariatur doloribus, voluptatum molestiae veniam enim ut? Neque itaque facilis ad illum.</p>
+                <div class="tab_titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces <br> Animation<br>Posters</li>
+                        <li><span>Web Development</span><br>Designing Web interfaces <br> Static/Dynamic Full stack Web  Development <br>Web App Development</li>
+                        <li><span>Android Development</span><br>Designing App interfaces <br>Full Stack App Development (Android,IOS)</li>
+                        <li><span>Add On</span><br>Photo Editing <br> Video Editing</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Solution Analysist At Sankey Solution <br> In Mumbai<br>Maharashtra - 400078</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Computer Engineering</span><br>Completed Computer Engineering Degree From <br>SMT. INDIRA GANDHI COLLEGE OF <br> ENGINEERING</li>
+                        <li><span>Machine Learning</span><br>Completed Machine Learning Course From <br>Coursera</li>
+                        <li><span>Android Development</span><br>Completed Android Development Course From <br>Coursera</li>
+                        <li><span>Web Development</span><br>Completed web Development Course From <br>Coursera</li>
+                        <li><span>Personal Branding</span><br>Completed Personal Branding Course From <br>Coursera</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+   <div id="services">
+    <div class="container">
+        <h1 class="sub_title">My Services</h1>
+        <div class="services-list">
+            <div>
+                
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Designs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut dolores nam nostrum, tempora officiis dicta ducimus itaque saepe consequatur aperiam illo quasi incidunt dignissimos.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut dolores nam nostrum, tempora officiis dicta ducimus itaque saepe consequatur aperiam illo quasi incidunt dignissimos.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Android Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut dolores nam nostrum, tempora officiis dicta ducimus itaque saepe consequatur aperiam illo quasi incidunt dignissimos.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-business-time"></i>
+                <h2>Personal Branding</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut dolores nam nostrum, tempora officiis dicta ducimus itaque saepe consequatur aperiam illo quasi incidunt dignissimos.</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+   </div>
+<!-- ------------------portfolio--------------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub_title">My Work</h1>
+
+    </div>
+
+   </div>
+
+
+
+
+
+
+
+<script>
+
+    // --------------about--------------
+    var tablinks=document.getElementsByClassName('tab-links');
+    var tabcontents=document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+
+</script>
+
+</body>
+</html>
